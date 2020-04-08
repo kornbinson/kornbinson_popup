@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">    
+    <script src="src/js/jquery-3.4.1.min.js" ></script>
+    <style>
+        html{
+            width: 540px;
+            height: 300px;            
+        }
+        body{
+            background-color: black;
+        }
+        .link{
+            width: 640px;
+            height: 360px;
+            position: absolute;
+            pointer-events: none;
+            left: 20px;
+        }
+        .settings{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 10px;
+            right: 5px;
+            transition: transform 0.3s;
+            outline: 1px solid transparent;            
+        }
+        .settings:hover{
+            transform: rotate(90deg);
+        }
+        img{            
+            width: 500px;
+            height: 250px;            
+            /* left: 20px; */
+        }
+        h2{
+            color: white;
+        }       
+    </style>
+</head>
+<body>
+    
+    <div id="onClick" class="link" style="pointer-events: auto !important" ></div>    
+    <script src="src/js/getVideos.js"></script>
+    <!-- <script src="src/background.js"></script> -->
+    <img id="settingsImg" class="settings" src="src/img/settings.png" title="settings" draggable="false"> </img>
+
+    <!-- justo antes de la primera rama -->
+    
+</body> 
+</html>

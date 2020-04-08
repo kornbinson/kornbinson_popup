@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.4.1.min.js" ></script>
+    <title>CONFIGURACION</title>
+    <style>
+        body{
+            /* -webkit-user-select: none; */
+
+            max-width: 640px;
+            max-height: 360px;;
+            padding: 10px;
+            background-color: rgb(21, 76, 105);
+            color: white;
+            /* text-align: center; */
+        }
+        #youtubeLink{
+            position: relative;
+            width: 80%;
+            /* left: 5%; */
+            outline: none;
+        }
+        #submit{                        
+            position: relative;                     
+        }
+        span{
+            font-size: 30px;
+        }
+    </style>
+    <script type="text/javascript"  src="js/settings.js"></script>
+</head>
+<body>
+    <h2>Configuracion de Extencion</h2>
+    <h3>Por favor ingrese el canal de youtube que desea guardar</h3>
+    <input type="text"  id="youtubeLink" title="Ingrese el canal de Youtube Ex: https://www.youtube.com/channel/UC55-mxUj5Nj3niXFReG44OQ/videos"  placeholder="https://www.youtube.com/channel/UCyoGb3SMlTlB8CLGVH4c8Rw/videos"></input>
+    <br><br>
+    <input id="submit" type="button" value="Guardar">
+</body>
+</html>
